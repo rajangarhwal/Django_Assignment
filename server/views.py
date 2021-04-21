@@ -32,7 +32,7 @@ class Register(APIView):
             'iat':datetime.datetime.utcnow()
         }
 
-        token = jwt.encode(payload, 'secret', algorithm='HS256').decode('utf-8')
+        token = jwt.encode(payload, 'secret', algorithm='HS256')
 
 
         return Response({'JWT Authentication Token': token, 'User id':user.id}, status = 200)        
@@ -63,7 +63,7 @@ class Login(APIView):
             'iat':datetime.datetime.utcnow()
         }
 
-        token = jwt.encode(payload, 'secret', algorithm='HS256').decode('utf-8')
+        token = jwt.encode(payload, 'secret', algorithm='HS256')
 
 
         return Response({'JWT Authentication Token': token, 'User id':user.id}, status = 200)
