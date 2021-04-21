@@ -7,4 +7,3 @@ psycopg2==2.8.6
 pytz==2021.1
 sqlparse==0.4.1
 whitenoise==5.2.0
--e hg+https://bitbucket.org/etienned/pil-2009-raclette/
