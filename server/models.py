@@ -14,7 +14,7 @@ class Advisor(AbstractBaseUser):
 
 class Booking(AbstractBaseUser):
 
-    time = models.DateTimeField(auto_now=False, auto_now_add=False, format=None, input_formats=['%Y-%m-%dT%H:%M:%SZ',])
+    time = models.DateTimeField(auto_now=False, auto_now_add=False, input_formats=['%Y-%m-%dT%H:%M:%SZ',])
     user_id = models.CharField(max_length = 200)
     advisor_id = models.CharField(max_length = 200)
 
