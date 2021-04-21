@@ -1,1 +1,1 @@
-web:gunicorn Django_Assignment.wsgi
+web: gunicorn Django_Assignment.wsgi
