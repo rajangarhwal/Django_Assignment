@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractBaseUser
 
 class Advisor(AbstractBaseUser):
     name = models.CharField(max_length=200)
-    photo_url = models.ImageField(upload_to = 'advisor_photo')
+    photo_url = models.FileField(upload_to = 'advisor_photo')
 
     username = None
     USERNAME_FIELD = 'name'
